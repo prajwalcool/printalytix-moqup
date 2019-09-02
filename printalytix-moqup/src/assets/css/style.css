@@ -647,7 +647,7 @@ input::-ms-input-placeholder {
 
 /*home section*/
 .home{
-    background: url("assets/images/homebg.jpg") no-repeat 100% 100%;
+    background: url(../images/homebg.jpg) no-repeat 100% 100%;
     background-size: cover;
 }
 
@@ -2012,6 +2012,11 @@ button.btn-md:hover {
 .service_item {
     background: #fff;
     padding: 20px;
+    height:405px;
+    margin:15px;
+}
+.service_item img{
+    height:160px;
 }
 .service_item a.read_more {
     color: #cc5c09;
