@@ -61,6 +61,9 @@ a:focus {
     text-decoration: none;
     outline: none;
 }
+a [routerlink]{
+  cursor: pointer;
+}
 a,
 button,
 a span {
@@ -778,10 +781,10 @@ input::-ms-input-placeholder {
 
 /*video section css*/
 
-.video{
+/* .video{
     background: url(../images/videobg.jpg) no-repeat top center;
     background-size:cover;
-}
+} */
 .video .main_video{
     padding: 220px 0px 160px 0px;
     overflow: hidden;
