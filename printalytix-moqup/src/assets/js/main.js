@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 
   $(".main_home_slider").owlCarousel({
     responsiveClass: true,
-    autoplay: false,
+    autoplay: true,
     items: 1,
     loop: true,
     dots: true,
@@ -145,13 +145,13 @@ jQuery(document).ready(function($) {
 
   jQuery(window).scroll(function() {
     var top = jQuery(document).scrollTop();
-    var height = 300;
+    var height = 320;
     //alert(batas);
 
     if (top > height) {
-      jQuery(".navbar-fixed-top").addClass("menu-scroll");
+      jQuery(".fixed-top").addClass("menu-scroll");
     } else {
-      jQuery(".navbar-fixed-top").removeClass("menu-scroll");
+      jQuery(".fixed-top").removeClass("menu-scroll");
     }
   });
 
@@ -201,13 +201,16 @@ $(document).on("scroll", function() {
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  // document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  // document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
+// $(document).ready(() => {
+//   new CircleMenuFx(document.querySelector(".circle_menu"));
+// });

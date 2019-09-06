@@ -1,13 +1,10 @@
 <header id="main_menu" class="header fixed-top">
   <div class="main_menu_bg">
     <div class="container-fluid">
-      <div class="row">
-        <div class="nave_menu">
-          <nav class="navbar navbar-default">
-            <div id="nh" class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button
+      <nav class="navbar navbar-expand-lg navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div id="nh" class="navbar-header mr-auto">
+          <!-- <button
                   type="button"
                   class="navbar-toggle collapsed"
                   data-toggle="collapse"
@@ -18,55 +15,75 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                </button>
-                <span
-                  id="nh"
-                  class="navbar-brand"
-                  style="font-size:30px;cursor:pointer"
-                  onclick="openNav()"
-                  >&#9776;</span
+                </button> -->
+          <!-- <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="true"
+                  aria-label="Toggle navigation"
                 >
-                <a id="logo1" class="navbar-brand" href="#home">
-                  <img
-                    class="animated zoomInLeft img-fluid p-4"
-                    width="110"
-                    src="assets/images/logo.png"
-                  />
-                </a>
-              </div>
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
-
-              <div
-                class="collapse navbar-collapse"
-                id="bs-example-navbar-collapse-1"
-              >
-                <div id="mySidenav" class="sidenav">
-                  <a
-                    href="javascript:void(0)"
-                    class="closebtn"
-                    onclick="closeNav()"
-                    >&times;</a
-                  >
-                  <a href="https://printalytix.com/index.html">About</a>
-                  <a href="#">Inbox</a>
-                  <a href="#">My Account</a>
-                  <a href="#">Quick Contact</a>
-                  <a href="">Help</a>
-                </div>
-
-                <ul class="nav justify-content-end">
-                  <li><a href="#">HOME</a></li>
-                  <li><a routerLink="/services">Services</a></li>
-                  <li><a href="forms/login.php">LOGIN</a></li>
-                  <li><a href="forms/signup.php">SIGNUP</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+          <span
+            id="nh"
+            class="navbar-brand"
+            style="font-size:30px;cursor:pointer"
+            onclick="openNav()"
+            >&#9776;</span
+          >
+          <a id="logo1" class="navbar-brand" href="#home">
+            <img
+              class="animated zoomInLeft img-fluid p-4"
+              width="110"
+              src="assets/images/logo.png"
+            />
+          </a>
         </div>
-      </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="https://printalytix.com/index.html">About</a>
+          <a href="#">Inbox</a>
+          <a href="#">My Account</a>
+          <a href="#">Quick Contact</a>
+          <a href="">Help</a>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="bs-example-navbar-collapse-1"
+        >
+          <ul class="navbar-nav my_nav_menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                id="service_circle_menu"
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Services
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms/login.php">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms/signup.php">SIGNUP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </div>
 </header>
+
 <!--End of header -->
