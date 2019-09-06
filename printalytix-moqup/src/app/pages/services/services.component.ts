@@ -6,9 +6,7 @@ import { CircleMenuFx } from "../../../assets/js/circle_menu";
   styleUrls: ["./services.component.scss"]
 })
 export class ServicesComponent implements OnInit {
-  constructor() {
-    new CircleMenuFx(document.querySelector(".circle_menu"));
-  }
+  constructor() {}
 
   ngOnInit() {}
 }

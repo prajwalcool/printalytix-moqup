@@ -133,6 +133,6 @@
   window.CircleMenuFx = CircleMenuFx;
 })(window);
 
-// $(document).ready(function() {
-//   new CircleMenuFx(document.querySelector(".circle_menu"));
-// });
+$(document).ready(function() {
+  new CircleMenuFx(document.querySelector(".circle_menu"));
+});

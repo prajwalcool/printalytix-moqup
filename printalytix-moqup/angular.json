@@ -26,7 +26,6 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
-
               "./node_modules/aos/dist/aos.css",
               "src/assets/css/animate.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
@@ -43,11 +42,12 @@
               "./node_modules/aos/dist/aos.js",
               "./node_modules/jquery.counterup/jquery.counterup.min.js",
               "src/assets/js/jquery.masonry.min.js",
-              "./node_modules/@fortawesome/fontawesome-free/js/all.min.js",
               "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "./node_modules/@fortawesome/fontawesome-free/js/all.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/animejs/lib/anime.min.js",
+              "./node_modules/mixitup/dist/mixitup.min.js",
+              "src/assets/owl-carousel/owl.carousel.js",
               "src/assets/js/circle_menu.js",
               "src/assets/js/main.js"
             ]
@@ -127,12 +127,12 @@
               "./node_modules/aos/dist/aos.js",
               "./node_modules/jquery.counterup/jquery.counterup.min.js",
               "src/assets/js/jquery.masonry.min.js",
-              "./node_modules/@fortawesome/fontawesome-free/js/all.min.js",
               "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "./node_modules/@fortawesome/fontawesome-free/js/all.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/animejs/lib/anime.min.js",
               "./node_modules/mixitup/dist/mixitup.min.js",
+              "src/assets/owl-carousel/owl.carousel.js",
               "src/assets/js/circle_menu.js",
               "src/assets/js/main.js"
             ]

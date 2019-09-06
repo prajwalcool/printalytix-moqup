@@ -2738,7 +2738,7 @@ Copyright (c) 2015 Daniel Eden
 
 .zoomInLeft {
   -webkit-animation-name: zoomInLeft;
-  animation-name: zoomInLeft;
+  animation: zoomInLeft 1s;
 }
 
 @-webkit-keyframes zoomInRight {
