@@ -1,6 +1,6 @@
 "use strict";
 jQuery(document).ready(function($) {
-  $(window).load(function() {
+  $(window).on("load", function() {
     $(".loaded").fadeOut();
     $(".preloader")
       .delay(1000)
@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
      * Mobile menu
      ---------------------------------------------*/
   $("#bs-example-navbar-collapse-1")
-    .find("a[href*=#]:not([href=#])")
+    .find("a[href*=\\#]:not([href=\\#])")
     .click(function() {
       if (
         location.pathname.replace(/^\//, "") ==
@@ -43,10 +43,11 @@ jQuery(document).ready(function($) {
      * WOW
      ---------------------------------------------*/
 
-  var wow = new WOW({
-    mobile: false // trigger animations on mobile devices (default is true)
-  });
-  wow.init();
+  // var wow = new WOW({
+  //   mobile: false // trigger animations on mobile devices (default is true)
+  // });
+  // wow.init();
+  AOS.init();
 
   /* ---------------------------------------------------------------------
      Carousel
@@ -54,7 +55,7 @@ jQuery(document).ready(function($) {
 
   $(".main_home_slider").owlCarousel({
     responsiveClass: true,
-    autoplay: false,
+    autoplay: true,
     items: 1,
     loop: true,
     dots: true,
@@ -135,22 +136,22 @@ jQuery(document).ready(function($) {
   // Counter
   //---------------------------------------------
 
-  $(".statistic-counter").counterUp({
-    delay: 10,
-    time: 2000
-  });
+  // $(".statistic-counter").counterUp({
+  //   delay: 10,
+  //   time: 2000
+  // });
 
   // main-menu-scroll
 
   jQuery(window).scroll(function() {
     var top = jQuery(document).scrollTop();
-    var height = 300;
+    var height = 320;
     //alert(batas);
 
     if (top > height) {
-      jQuery(".navbar-fixed-top").addClass("menu-scroll");
+      jQuery(".fixed-top").addClass("menu-scroll");
     } else {
-      jQuery(".navbar-fixed-top").removeClass("menu-scroll");
+      jQuery(".fixed-top").removeClass("menu-scroll");
     }
   });
 
@@ -170,17 +171,17 @@ jQuery(document).ready(function($) {
   });
 
   //    $('#menu').slicknav();
-  jQuery("#portfoliowork").mixItUp({
-    selectors: {
-      target: ".tile",
-      filter: ".filter",
-      sort: ".sort-btn"
-    },
-    animation: {
-      animateResizeContainer: false,
-      effects: "fade scale"
-    }
-  });
+  // jQuery("#portfoliowork").mixItUp({
+  //   selectors: {
+  //     target: ".tile",
+  //     filter: ".filter",
+  //     sort: ".sort-btn"
+  //   },
+  //   animation: {
+  //     animateResizeContainer: false,
+  //     effects: "fade scale"
+  //   }
+  // });
 
   $(".dropdown-menu").click(function(e) {
     e.stopPropagation();

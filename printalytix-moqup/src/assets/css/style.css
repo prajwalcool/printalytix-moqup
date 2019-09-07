@@ -61,7 +61,7 @@ a:focus {
     text-decoration: none;
     outline: none;
 }
-a [routerlink]{
+a [routerlink],a [data-toggle]{
   cursor: pointer;
 }
 a,
@@ -564,9 +564,9 @@ input::-ms-input-placeholder {
     background-color: transparent; 
     border-color: transparent; 
     transition: all .6s;
-    margin: 15px auto;
+    /* margin: 15px auto; */
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,#service_circle_menu:hover{
     color:#ff7200;
     background: transparent;
 }
@@ -580,7 +580,7 @@ input::-ms-input-placeholder {
 
 }
 
-.main_menu_bg .navbar-nav>li>a {
+.main_menu_bg .my_nav_menu>li>a,#service_circle_menu {
     padding-top: 15px;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -588,13 +588,16 @@ input::-ms-input-placeholder {
     color: #cc5c09;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    border:0;
+    background: transparent;
+
 }
 .navbar-brand {
     padding: 0px 15px;
 }
-.navbar-brand>img {
+/* .navbar-brand>img {
     max-width: 80%;
-}
+} */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     background-color:transparent;
     color:#f5c239;
@@ -725,7 +728,7 @@ input::-ms-input-placeholder {
     width: 250px;
     height: 180px;
     margin-left:20px;
-    background: url(C:\xampp\htdocs\printalytix\assets\images) no-repeat top center;
+    /* background: url("C:/xampp/htdocs/printalytix/assets/images") no-repeat top center; */
     border:0px;
     transition: all 0.6s;
 }
@@ -1599,7 +1602,7 @@ button.btn-md:hover {
     opacity: 1;
 }
 
-.scrollup i {
+.scrollup i,.scrollup svg {
     font-size: 13px;
     position: absolute;
     opacity: 1;
@@ -1636,14 +1639,15 @@ button.btn-md:hover {
 }
 #nh{
     margin-left: 10px;
-    padding: 12px;
+    /* padding: 12px; */
     color: #cc5c09;
     border: rgb(62, 65, 66);
 	  font-size: 0.875rem;
     font-family: 'Raleway', sans-serif;
 }
 #logo1{
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    transform:translateY(-10px);
 }
 #sideopen{
     font-size: 25px;
@@ -2058,7 +2062,7 @@ button.btn-md:hover {
  */
 .latest_project_wrapper {
     width: 100%;
-    background: url(../../img/projects_bg.jpg) no-repeat;
+    /* background: url("src/assets/img/projects_bg.jpg") no-repeat; */
     background-size: cover;
     text-align: center;
 }
