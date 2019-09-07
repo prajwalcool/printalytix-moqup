@@ -61,7 +61,7 @@ a:focus {
     text-decoration: none;
     outline: none;
 }
-a [routerlink],a .data-toggle{
+a [routerlink],a [data-toggle]{
   cursor: pointer;
 }
 a,
@@ -566,7 +566,7 @@ input::-ms-input-placeholder {
     transition: all .6s;
     /* margin: 15px auto; */
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,#service_circle_menu:hover{
     color:#ff7200;
     background: transparent;
 }
@@ -580,7 +580,7 @@ input::-ms-input-placeholder {
 
 }
 
-.main_menu_bg .my_nav_menu>li>a {
+.main_menu_bg .my_nav_menu>li>a,#service_circle_menu {
     padding-top: 15px;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -588,6 +588,9 @@ input::-ms-input-placeholder {
     color: #cc5c09;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    border:0;
+    background: transparent;
+
 }
 .navbar-brand {
     padding: 0px 15px;
