@@ -4,6 +4,7 @@ import { ServicesComponent } from "./pages/services/services.component";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { ProgressComponent } from "./pages/progress/progress.component";
 import { StepProgressBarComponent } from "./components/step-progress-bar/step-progress-bar.component";
+import { ChatbotComponent } from "./components/chatbot/chatbot.component";
 
 const routes: Routes = [
   {
@@ -25,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: "step",
-    component: StepProgressBarComponent
+    component: ChatbotComponent
   }
 ];
 
