@@ -48,8 +48,7 @@
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/animejs/lib/anime.min.js",
-              "src/assets/js/circle_menu.js",
-              "src/assets/js/main.js"
+              "src/assets/js/circle_menu.js"
             ]
           },
           "configurations": {
@@ -133,8 +132,7 @@
               "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/animejs/lib/anime.min.js",
               "./node_modules/mixitup/dist/mixitup.min.js",
-              "src/assets/js/circle_menu.js",
-              "src/assets/js/main.js"
+              "src/assets/js/circle_menu.js"
             ]
           }
         },

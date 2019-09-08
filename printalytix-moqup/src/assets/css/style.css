@@ -9,7 +9,7 @@ Author URI: http://bootstrapthemes.co
    ========================================================================== */
 html,
 body {
-    background-color: #fff;
+    background-color: transparent;
     font-size: 0.875rem;
     color: #797979;
     width: 100%;
@@ -566,9 +566,10 @@ input::-ms-input-placeholder {
     transition: all .6s;
     /* margin: 15px auto; */
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,#service_circle_menu:hover{
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus,#service_circle_menu:hover,#service_circle_menu:focus{
     color:#ff7200;
     background: transparent;
+    outline: none;
 }
 .main_menu_bg .navbar {}
 
