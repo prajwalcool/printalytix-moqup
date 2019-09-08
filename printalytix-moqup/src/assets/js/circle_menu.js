@@ -86,13 +86,13 @@
       },
       easing: "easeOutElastic",
       translateY: function(t, i, c) {
-        const radius = 200;
+        const radius = 250;
         return (
           Math.round(radius * Math.sin((2 * (i + 1) * Math.PI) / c)) + "px"
         );
       },
       translateX: function(t, i, c) {
-        const radius = 200;
+        const radius = 250;
         return (
           Math.round(radius * Math.cos((2 * (i + 1) * Math.PI) / c)) + "px"
         );
