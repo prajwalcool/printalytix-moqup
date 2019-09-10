@@ -1,0 +1,17 @@
+.progress-wrapper {
+  margin: 110px auto 0;
+  width: 80%;
+}
+
+.circle-progress-wrapper {
+  width: 100%;
+  margin: 10px 86px;
+}
+
+.progres-activities svg {
+  color: green;
+  font-size: 21px;
+  line-height: 52px;
+  margin: -1px 17px -2px 0px;
+}
+/*# sourceMappingURL=progress.component.css.map */

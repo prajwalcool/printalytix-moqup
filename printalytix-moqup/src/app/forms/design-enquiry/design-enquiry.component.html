@@ -1,0 +1,99 @@
+<!-- Default form register -->
+<div class="w-75 m-auto">
+  <section>
+    <form class="text-center border border-light p-5">
+      <p class="h4 mb-4">Design Enquiry</p>
+
+      <div class="form-row mb-4">
+        <div class="col">
+          <!-- Design Reference no -->
+          <input
+            type="text"
+            id="refno"
+            class="form-control"
+            placeholder="Project Reference no(If any)"
+          />
+        </div>
+        <div class="col">
+          <!-- Project name -->
+          <input
+            type="text"
+            id="project_name"
+            class="form-control"
+            placeholder="Project Title"
+          />
+        </div>
+      </div>
+      <p class="text">
+        <textarea
+          name="text"
+          class="form-control mb-4"
+          placeholder="Short Project Description"
+        ></textarea>
+      </p>
+      <p class="text-left medium  h5 mb-4">Expected Project Completion</p>
+      <input
+        type="date"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        aria-label="Expected Project Completion"
+      />
+    </form>
+  </section>
+  <section>
+    <form class="text-left border border-light p-5" href="design_progress.php">
+      <p class="h4 mb-4">
+        Mention the nature of application for the requested 3D CAD model
+      </p>
+      <p class="text">
+        <textarea name="text" class="form-control mb-4"> </textarea>
+      </p>
+      <p class="h4 mb-4">Mention any particular industry standards required</p>
+      <input
+        type="text"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        placeholder="Standards"
+      />
+      <p class="h4 mb-4">
+        Specify any particular software(s) or version preferences
+      </p>
+      <input
+        type="text"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        placeholder="Software Preferences"
+      />
+      <p class="h4 mb-4">Specify design file format preferences</p>
+      <input
+        type="text"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        placeholder="File Format Preference"
+      />
+      <p class="h4 mb-4">
+        Mention details on attachments/Pdfs/Drawings/Images(Enclosed If Any)
+      </p>
+      <input
+        type="attachments"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        placeholder="Attachment Details"
+      />
+      <p class="h4 mb-4">Estimated annual design requirements</p>
+      <input
+        type="requirement"
+        id="defaultRegisterFormEmail"
+        class="form-control mb-4"
+        placeholder="Requirement"
+      />
+      <p class="h4 mb-4">Upload files</p>
+      <a
+        class="btn btn-info my-4 btn-block"
+        href="design_progress.php"
+        type="submit"
+        >Submit</a
+      >
+    </form>
+  </section>
+</div>

@@ -3,8 +3,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { ServicesComponent } from "./pages/services/services.component";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { ProgressComponent } from "./pages/progress/progress.component";
-import { StepProgressBarComponent } from "./components/step-progress-bar/step-progress-bar.component";
-import { ChatbotComponent } from "./components/chatbot/chatbot.component";
+import { ProtoEnquiryComponent } from "./forms/proto-enquiry/proto-enquiry.component";
+import { DesignEnquiryComponent } from "./forms/design-enquiry/design-enquiry.component";
 
 const routes: Routes = [
   {
@@ -26,7 +26,11 @@ const routes: Routes = [
   },
   {
     path: "step",
-    component: ChatbotComponent
+    component: ProtoEnquiryComponent
+  },
+  {
+    path: "de",
+    component: DesignEnquiryComponent
   }
 ];
 
