@@ -54,7 +54,7 @@
               </button>
             </li>
             <ng-container>
-              <div *ngIf="!isLoggedIn">
+              <ng-container *ngIf="!isLoggedIn">
                 <li class="nav-item">
                   <button type="button" id="service_circle_menu" class="nav-link" data-toggle="modal"
                     data-target="#loginModal" title="Login"><i class="fa fa-user-circle"
@@ -65,7 +65,7 @@
                     data-target="#registerModal" title="Register"><i class="fa fa-user-plus"
                       aria-hidden="true"></i></button>
                 </li>
-              </div>
+              </ng-container>
               <div *ngIf="isLoggedIn">
                 <li class="nav-item">
                   <button type="button" id="service_circle_menu" class="nav-link" data-toggle="modal"

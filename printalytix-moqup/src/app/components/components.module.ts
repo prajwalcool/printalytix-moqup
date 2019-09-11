@@ -6,10 +6,12 @@ import { StepProgressBarComponent } from "./step-progress-bar/step-progress-bar.
 import { ChatbotComponent } from "./chatbot/chatbot.component";
 import { StepPprogressBarComponent } from './step-pprogress-bar/step-pprogress-bar.component';
 import { ProgressComponent } from '../pages/progress/progress.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HeaderComponent, StepProgressBarComponent, ChatbotComponent, StepPprogressBarComponent],
+  declarations: [HeaderComponent, StepProgressBarComponent, ChatbotComponent, StepPprogressBarComponent, FooterComponent],
   imports: [CommonModule, AppRoutingModule],
-  exports: [HeaderComponent, StepProgressBarComponent, ChatbotComponent, StepPprogressBarComponent]
+  exports: [HeaderComponent, StepProgressBarComponent, ChatbotComponent, StepPprogressBarComponent
+    , FooterComponent]
 })
 export class ComponentsModule { }

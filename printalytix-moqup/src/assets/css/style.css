@@ -2292,15 +2292,15 @@ a:hover {
 
 .circle_menu-img {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 47%;
-  height:80px;
-  width: 160px;
+  height:160px;
+  width: 184px;
   /* -webkit-transform: translate(-15%, 0%);
           transform: translate(-15%, 0%); */
 }
 
-.circle_menu__preview img,.circle_menu__preview button {
+.circle_menu__preview img,.circle_menu__preview input {
     top: 50%;
   left: 50%;
   max-height: 60px;
@@ -2309,8 +2309,11 @@ a:hover {
   opacity: 0;
 }
 
-.circle_menu__preview button img{
-    height: 60px;
+
+
+.circle_menu__preview input{
+    max-height: 100px;
+
 }
 
 .orange-col{
@@ -2374,4 +2377,19 @@ a:hover {
 
 .progressbar li.active + li:after {
   background-color:orange;
+}
+
+.services-overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1040;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: dimgrey;
+}
+
+.modal-backdrop{
+    background-color: dimgrey !important;
 }
