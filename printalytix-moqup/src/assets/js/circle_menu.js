@@ -1,4 +1,4 @@
-(function(window) {
+(function (window) {
   /**
    * FolderFx obj.
    */
@@ -17,7 +17,7 @@
   /**
    * Remove/Stop any animation.
    */
-  FolderFx.prototype._removeAnimeTargets = function() {
+  FolderFx.prototype._removeAnimeTargets = function () {
     anime.remove(this.DOM.preview);
     anime.remove(this.DOM.previewElems);
     anime.remove(this.DOM.wrapper);
@@ -31,15 +31,15 @@
     }
   };
 
-  FolderFx.prototype._initEvents = function() {
+  FolderFx.prototype._initEvents = function () {
     const self = this;
-    this._mouseenterFn = function() {
-      self.intimeout = setTimeout(function() {
+    this._mouseenterFn = function () {
+      self.intimeout = setTimeout(function () {
         self._removeAnimeTargets();
         self._in();
       }, 75);
     };
-    this._mouseleaveFn = function() {
+    this._mouseleaveFn = function () {
       clearTimeout(self.intimeout);
       self._removeAnimeTargets();
       self._out();
@@ -48,17 +48,17 @@
     this.DOM.wrapper.addEventListener("mouseleave", this._mouseleaveFn);
   };
 
-  FolderFx.prototype._in = function() {
+  FolderFx.prototype._in = function () {
     const self = this;
-    [].slice.call(this.DOM.previewElems).forEach(function(el) {
+    [].slice.call(this.DOM.previewElems).forEach(function (el) {
       // Add default behaviour.
       //el.style.opacity = 1;
     });
   };
 
-  FolderFx.prototype._out = function() {
+  FolderFx.prototype._out = function () {
     const self = this;
-    [].slice.call(this.DOM.previewElems).forEach(function(el) {
+    [].slice.call(this.DOM.previewElems).forEach(function (el) {
       // Add default behaviour.
       //el.style.opacity = 0;
     });
@@ -75,23 +75,23 @@
   CircleMenuFx.prototype = Object.create(FolderFx.prototype);
   CircleMenuFx.prototype.constructor = CircleMenuFx;
 
-  CircleMenuFx.prototype._in = function() {
+  CircleMenuFx.prototype._in = function () {
     const self = this;
 
     anime({
       targets: this.DOM.previewElems,
       duration: 800,
-      delay: function(t, i, c) {
+      delay: function (t, i, c) {
         return (c - i - 1) * 80;
       },
       easing: "easeOutElastic",
-      translateY: function(t, i, c) {
+      translateY: function (t, i, c) {
         const radius = 250;
         return (
           Math.round(radius * Math.sin((2 * (i + 1) * Math.PI) / c)) + "px"
         );
       },
-      translateX: function(t, i, c) {
+      translateX: function (t, i, c) {
         const radius = 250;
         return (
           Math.round(radius * Math.cos((2 * (i + 1) * Math.PI) / c)) + "px"
@@ -106,13 +106,13 @@
     });
   };
 
-  CircleMenuFx.prototype._out = function() {
+  CircleMenuFx.prototype._out = function () {
     const self = this;
 
     anime({
       targets: this.DOM.previewElems,
       duration: 300,
-      delay: function(t, i, c) {
+      delay: function (t, i, c) {
         return i * 40;
       },
       easing: "easeInBack",
@@ -122,7 +122,7 @@
       opacity: {
         value: 0,
         duration: 10,
-        delay: function(t, i, c) {
+        delay: function (t, i, c) {
           return i * 40 + 300;
         },
         easing: "linear"

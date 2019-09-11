@@ -1,0 +1,85 @@
+<div class="progress-wrapper">
+    <app-step-pprogress-bar></app-step-pprogress-bar>
+    <div class="row circle-progress-wrapper">
+        <div class="col">
+            <circle-progress [percent]="100" [radius]="60" [outerStrokeWidth]="6" [innerStrokeWidth]="2"
+                [outerStrokeColor]="'orange'" [innerStrokeColor]="'lightgrey'" [animation]="true"
+                [animationDuration]="1000">
+            </circle-progress>
+            <div class="card progres-activities" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="far fa-check-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-check-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-check-circle"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mt-5" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <circle-progress [percent]="50" [radius]="60" [outerStrokeWidth]="6" [innerStrokeWidth]="2"
+                [outerStrokeColor]="'orange'" [innerStrokeColor]="'lightgrey'" [animation]="true"
+                [animationDuration]="1000">
+            </circle-progress>
+            <div class="card progres-activities" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="far fa-check-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-check-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-circle"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mt-5" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <circle-progress [percent]="0" [radius]="60" [outerStrokeWidth]="6" [innerStrokeWidth]="2"
+                [outerStrokeColor]="'orange'" [innerStrokeColor]="'lightgrey'" [animation]="true"
+                [animationDuration]="1000">
+            </circle-progress>
+            <div class="card progres-activities" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="far fa-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-circle"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="far fa-circle"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mt-5" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-info m-4  " type="submit">Raise Request</button>
+<button class="btn btn-info m-4 " type="submit">Review Meeting</button>

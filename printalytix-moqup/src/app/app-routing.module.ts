@@ -7,6 +7,7 @@ import { ProtoEnquiryComponent } from "./forms/proto-enquiry/proto-enquiry.compo
 import { DesignEnquiryComponent } from "./forms/design-enquiry/design-enquiry.component";
 import { LoginformComponent } from './auth/loginform/loginform.component';
 import { RegisterformComponent } from './auth/registerform/registerform.component';
+import { PProgressComponent } from './pages/p-progress/p-progress.component';
 
 const routes: Routes = [
   {
@@ -35,12 +36,28 @@ const routes: Routes = [
     component: DesignEnquiryComponent
   },
   {
-    path:"login",
-    component:LoginformComponent
+    path: "login",
+    component: LoginformComponent
   },
   {
-    path:"register",
-    component:RegisterformComponent
+    path: "register",
+    component: RegisterformComponent
+  },
+  {
+    path: 'd-enquiry',
+    component: DesignEnquiryComponent
+  },
+  {
+    path: 'p-enquiry',
+    component: ProtoEnquiryComponent
+  },
+  {
+    path: 'd-progress',
+    component: ProgressComponent
+  },
+  {
+    path: 'p-progress',
+    component: PProgressComponent
   }
 ];
 
@@ -48,4 +65,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

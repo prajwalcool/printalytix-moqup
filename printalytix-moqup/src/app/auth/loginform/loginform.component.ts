@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loginform',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginformComponent implements OnInit {
 
-  constructor() { }
+  constructor(private AuthSer: AuthService, private route: Router) { }
 
   ngOnInit() {
   }
-
+  Login() {
+    this.AuthSer.isLoggedIn = true;
+    this.route.navigate(['/']);
+  }
 }

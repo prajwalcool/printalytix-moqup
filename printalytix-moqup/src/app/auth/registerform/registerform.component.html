@@ -1,17 +1,19 @@
 <!-- Default form register -->
 
-<form class="text-center border border-light p-2">
+<form class="text-center border border-light p-2" formGroup="registerForm" (onSubmit)="Register">
 
     <p class="h4 mb-4">Register</p>
 
     <div class="form-row mb-4">
         <div class="col">
             <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+            <input type="text" id="defaultRegisterFormFirstName" [formControlName]="fname" class="form-control"
+                placeholder="First name">
         </div>
         <div class="col">
             <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+            <input type="text" id="defaultRegisterFormLastName" [formControlName]="lname" class="form-control"
+                placeholder="Last name">
         </div>
     </div>
 
