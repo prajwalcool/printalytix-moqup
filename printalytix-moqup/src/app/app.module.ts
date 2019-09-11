@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { ComponentsModule } from "./components/components.module";
 import { PagesModule } from "./pages/pages.module";
 import { Forms1Module } from "./forms/forms.module";
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,8 @@ import { Forms1Module } from "./forms/forms.module";
     AppRoutingModule,
     ComponentsModule,
     PagesModule,
-    Forms1Module
+    Forms1Module,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

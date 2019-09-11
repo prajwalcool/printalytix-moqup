@@ -6,6 +6,7 @@ import { DashboardModule } from "../dashboard/dashboard.module";
 import { ProgressComponent } from "./progress/progress.component";
 import { ComponentsModule } from "../components/components.module";
 import { NgCircleProgressModule } from "ng-circle-progress";
+import { AuthModule } from '../auth/auth.module';
 @NgModule({
   declarations: [DashboardComponent, ServicesComponent, ProgressComponent],
   imports: [
@@ -20,8 +21,9 @@ import { NgCircleProgressModule } from "ng-circle-progress";
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300
-    })
+    }),
+    AuthModule
   ],
   exports: [DashboardComponent, ServicesComponent]
 })
-export class PagesModule {}
+export class PagesModule { }

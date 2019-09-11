@@ -5,6 +5,8 @@ import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { ProgressComponent } from "./pages/progress/progress.component";
 import { ProtoEnquiryComponent } from "./forms/proto-enquiry/proto-enquiry.component";
 import { DesignEnquiryComponent } from "./forms/design-enquiry/design-enquiry.component";
+import { LoginformComponent } from './auth/loginform/loginform.component';
+import { RegisterformComponent } from './auth/registerform/registerform.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: "de",
     component: DesignEnquiryComponent
+  },
+  {
+    path:"login",
+    component:LoginformComponent
+  },
+  {
+    path:"register",
+    component:RegisterformComponent
   }
 ];
 
