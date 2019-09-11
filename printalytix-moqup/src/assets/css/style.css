@@ -591,6 +591,7 @@ input::-ms-input-placeholder {
     font-weight: 400;
     border:0;
     background: transparent;
+    margin: 5px 20px;
 
 }
 .navbar-brand {
