@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, Component } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { ServicesComponent } from "./pages/services/services.component";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
@@ -8,6 +8,7 @@ import { DesignEnquiryComponent } from "./forms/design-enquiry/design-enquiry.co
 import { LoginformComponent } from './auth/loginform/loginform.component';
 import { RegisterformComponent } from './auth/registerform/registerform.component';
 import { PProgressComponent } from './pages/p-progress/p-progress.component';
+import { SideScreensComponent } from './forms/side-screens/side-screens.component';
 
 const routes: Routes = [
   {
@@ -48,16 +49,16 @@ const routes: Routes = [
     component: DesignEnquiryComponent
   },
   {
-    path: 'p-enquiry',
-    component: ProtoEnquiryComponent
-  },
-  {
     path: 'd-progress',
     component: ProgressComponent
   },
   {
     path: 'p-progress',
     component: PProgressComponent
+  },
+  {
+    path: 'side-screens',
+    component: SideScreensComponent
   }
 ];
 

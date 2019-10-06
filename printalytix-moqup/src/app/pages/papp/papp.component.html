@@ -1,0 +1,80 @@
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
+      experience.
+    </p>
+  <![endif]-->
+    <div class="preloader">
+        <div class="loaded">&nbsp;</div>
+    </div>
+    <div class="culmn">
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+    </div>
+    <mybot></mybot>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" style="pointer-events: initial">
+            <!-- <div class="services-overlay"></div> -->
+            <div class="modal-dialog-centered">
+                <app-services></app-services>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <app-loginform></app-loginform>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <app-registerform></app-registerform>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="reqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a routerLink="D:\printalytix-moqup\printalytix-moqup\src\app\forms\proto-enquiry"
+                            class=" btn orange-col" data-dismiss="modal"> New Request</a>
+                        <a routerLink="D:\printalytix-moqup\printalytix-moqup\src\app\pages\p-progress"
+                            class="btn orange-col" data-dismiss="modal">Ongoing Request</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

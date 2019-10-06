@@ -9,8 +9,9 @@ import { NgCircleProgressModule } from "ng-circle-progress";
 import { AuthModule } from '../auth/auth.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { PProgressComponent } from './p-progress/p-progress.component';
+import { PappComponent } from './papp/papp.component';
 @NgModule({
-  declarations: [DashboardComponent, ServicesComponent, ProgressComponent, PProgressComponent],
+  declarations: [DashboardComponent, ServicesComponent, ProgressComponent, PProgressComponent, PappComponent],
   imports: [
     CommonModule,
     DashboardModule,
@@ -27,6 +28,6 @@ import { PProgressComponent } from './p-progress/p-progress.component';
     AuthModule,
     AppRoutingModule
   ],
-  exports: [DashboardComponent, ServicesComponent]
+  exports: [DashboardComponent, ServicesComponent, PappComponent]
 })
 export class PagesModule { }

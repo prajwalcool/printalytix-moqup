@@ -2,28 +2,46 @@
 <div class="w-75 m-auto">
   <section>
     <form class="text-center border border-light p-5">
-      <p class="h4 mb-4">Design Enquiry</p>
+      <p class="h4 mb-4">Prototype Enquiry</p>
 
       <div class="form-row mb-4">
         <div class="col">
           <!-- Design Reference no -->
-          <input type="text" id="refno" class="form-control" placeholder="Project Reference no(If any)" />
+          <input type="text" id="refno" class="form-control" placeholder="Prototype Reference no(If any)" />
         </div>
         <div class="col">
           <!-- Project name -->
-          <input type="text" id="project_name" class="form-control" placeholder="Project Title" />
+          <input type="text" id="project_name" class="form-control" placeholder="Prototype Name " />
         </div>
       </div>
       <p class="text">
-        <textarea name="text" class="form-control mb-4" placeholder="Short Project Description"></textarea>
+        <textarea name="text" class="form-control mb-4" placeholder="Short Prototype Description"></textarea>
       </p>
       <p class="text-left medium  h5 mb-4">Expected Project Completion</p>
       <input type="date" id="defaultRegisterFormEmail" class="form-control mb-4"
-        aria-label="Expected Project Completion" />
+        aria-label="Expected Prototype Completion" />
     </form>
   </section>
   <section>
-    <form class="text-left border border-light p-5" href="design_progress.php">
+    <section>
+      <form class="text-left border border-light p-5">
+        <p class="h4 mb-4">
+          Delivery Mode and Location
+        </p>
+        <p class="text">
+          <input type="software" id="defaultRegisterFormEmail" class="form-control mb-4" />
+        </p>
+        <p class="h4 mb-4">
+          Prototype Object Description
+        </p>
+        <input type="software" id="defaultRegisterFormEmail" class="form-control mb-4" />
+        <p class="h4 mb-4">Object Application</p>
+        <input type="software" id="defaultRegisterFormEmail" class="form-control mb-4" />
+        <!--<p class="h4 mb-4">Upload files</p>
+        <a class="btn btn-info my-4 btn-block" href="#" type="submit">Submit</a>
+         -->
+        <!-- </section> -->
+        <!-- <form class="text-left border border-light p-5" href="design_progress.php">
       <p class="h4 mb-4">
         Mention the nature of application for the requested 3D CAD model
       </p>
@@ -44,11 +62,36 @@
       <input type="attachments" id="defaultRegisterFormEmail" class="form-control mb-4"
         placeholder="Attachment Details" />
       <p class="h4 mb-4">Estimated annual design requirements</p>
-      <input type="requirement" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="Requirement" />
-      <p class="h4 mb-4">Upload files</p>
-      <a class="btn btn-info m-4 " routerLink="../d-progress">Submit</a>
-      <button class="btn btn-info m-4  " type="submit">Save As Draft </button>
-      <button class="btn btn-info m-4 " type="submit">Get Instant Quote</button>
-    </form>
-  </section>
-</div>
+      <input type="requirement" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="Requirement" /> -->
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- Design Reference no -->
+            <input type="text" id="refno" class="form-control" placeholder="Specify Material Type Requirement" />
+          </div>
+          <div class="col">
+            <!-- Project name -->
+            <input type="text" id="project_name" class="form-control"
+              placeholder="Specify Material Color Preferences " />
+          </div>
+        </div>
+        <div class="form-row mb-4">
+          <div class="col">
+            <!-- Design Reference no -->
+            <input type="text" id="refno" class="form-control" placeholder="Estimated Monthly/Annual QTY Requirement" />
+          </div>
+          <div class="col">
+            <!-- Project name -->
+            <input type="text" id="project_name" class="form-control"
+              placeholder="Mention Attachments/Drawings/Images(If Any) " />
+          </div>
+        </div>
+        <p class="h4 mb-4">Upload files</p>
+        <form>
+          <input type="file" name="myFile" multiple><br><br>
+          <input type="submit">
+        </form>
+        <a class="btn btn-info m-4 " routerLink="../d-progress">Submit</a>
+        <button class="btn btn-info m-4  " type="submit">Save As Draft </button>
+        <button class="btn btn-info m-4 " type="submit">Get Instant Quote</button>
+      </form>
+    </section>
